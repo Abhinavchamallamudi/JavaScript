@@ -1,0 +1,57 @@
+<script src="./index.js"></script>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+
+<div class="row">
+  <h1 id="github-profile-card">
+    <a href="http://abhinavchamallamudi.github.io/My-Github-ProfileCard/"
+      >My Github Profile Card</a
+    >
+  </h1>
+  <!-- Load your own profile -->
+  <div class="config-section-left">
+    <!-- Widget template -->
+    <form action="" class="tooltip choose-user">
+      <input type="text" placeholder="GitHub username" id="gh-uname" />
+      <input type="submit" id="gh-uname-submit" value="send" />
+    </form>
+
+    <form action="" class="tooltip choose-repos-num">
+      <label for="gh-reposNum">repositories: </label>
+      <input type="number" min="0" max="10" value="5" id="gh-reposNum" />
+    </form>
+
+    <form action="" class="tooltip choose-repo-sorting">
+      <input type="radio" name="repo-sorting" id="last-updated" value="" />
+      <label for="last-updated">Last updated</label>
+      <br />
+      <input
+        type="radio"
+        name="repo-sorting"
+        id="most-starred"
+        value=""
+        checked
+      />
+      <label for="most-starred" class="active">Most starred</label>
+    </form>
+  </div>
+
+  <div class="content-section">
+    <div id="github-card-demo" data-username="piotrl"></div>
+  </div>
+</div>
+<h2>
+  Use it on your website! -
+  <a href="#">Guide</a>
+</h2>
+<div class="row">
+  <div class="pre">
+    <textarea
+      id="install-code"
+      readonly="1"
+      rows="6"
+      spellcheck="false"
+      onclick="this.focus(); this.select()"
+    >
+    </textarea>
+  </div>
+</div>
