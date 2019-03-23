@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <body>
+    <div class="text-center">
+      <img
+        src="./img/KEYCODE VIEWER (1).png"
+        class="rounded"
+        alt="Keycode Viewer"
+      />
+    </div>
+    <form>
+      <div class="form-group">
+        <h3 class="text-center">
+          Press a key on the keyboard in the input field to get the Unicode
+          character code/Keycode of the pressed key
+        </h3>
+        <input
+          type="text"
+          class="form-control"
+          id="keyPress"
+          onkeypress="displayKeycode(event)"
+        />
+      </div>
+    </form>
+    <button onclick="clearButton(keyPress)">Clear</button>
+
+    <h1 class="text-center">
+      <span class="badge badge-dark badge-lg" id="display"></span>
+    </h1>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
