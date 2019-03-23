@@ -9,7 +9,7 @@
   <body>
     <div class="text-center">
       <img
-        src="./img/KEYCODE VIEWER (1).png"
+        src="./img/keycode-viewer-v1.png"
         class="rounded"
         alt="Keycode Viewer"
       />
@@ -28,8 +28,11 @@
         />
       </div>
     </form>
-    <button onclick="clearButton(keyPress)">Clear</button>
-
+    <div style="text-align: center;">
+      <button class="btn btn-outline-dark" onclick="clearButton(keyPress)"" data-toggle="button" aria-pressed="false" autocomplete="off"">
+        Clear Input field
+      </button>
+    </div>
     <h1 class="text-center">
       <span class="badge badge-dark badge-lg" id="display"></span>
     </h1>
